@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "Don't fall in love",
   "scripts": {
-    "compile": "sass app.scss app.css"
+    "compile": "sass --watch app.scss app.css",
+    "serve": "http-server"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,8 @@
   },
   "homepage": "https://github.com/nesnik/NIX-CSS#readme",
   "dependencies": {
+    "http-server": "^0.12.3",
+    "normalize.css": "^8.0.1",
     "sass": "^1.35.1"
   }
 }
