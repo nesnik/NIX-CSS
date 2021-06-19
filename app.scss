@@ -1,0 +1,49 @@
+@import 'normalize.css';
+
+body, html {
+    height:100%;
+    background-color: #e14b5a;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.main-container {
+    position: relative;
+    background-color: white;
+    margin: 50px;
+    padding: 10px;
+
+    .header-content {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        padding-right: 50px;
+        padding-left: 50px;
+
+        font-size: 21px;
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 1.2;
+
+        .navigation {
+            color: #000;
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            align-items: center;
+
+            div {
+                margin-right: 10px;
+            }
+        }
+
+        .sign-in {
+            background-color: #000;
+            color: #fff;
+            border: 1px solid transparent;
+            padding: 16px 30px;
+            border-radius: 26px;
+            box-shadow: 3px 3px 11px rgb(0 0 0 / 30%);
+        }
+    }
+}
