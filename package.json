@@ -1,0 +1,25 @@
+{
+  "name": "nix-css",
+  "version": "1.0.0",
+  "description": "Don't fall in love",
+  "scripts": {
+    "compile": "sass app.scss app.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nesnik/NIX-CSS.git"
+  },
+  "keywords": [
+    "css",
+    "bootstrap"
+  ],
+  "author": "nesnik",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nesnik/NIX-CSS/issues"
+  },
+  "homepage": "https://github.com/nesnik/NIX-CSS#readme",
+  "dependencies": {
+    "sass": "^1.35.1"
+  }
+}
