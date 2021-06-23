@@ -28,6 +28,15 @@ h1 {
                 width: 60%;
             }
         }
+        .navigation {
+            color: #000;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            align-items: center;
+            display: none;
+            width: 50%;
+            font-size: 1.2rem;
+        }
         .sign-in {
             .sign-in-button {
                 background-color: #000;
@@ -39,8 +48,9 @@ h1 {
         }
     }
     .article-content {
-        position: relative;
+        position:relative ;
         .left {
+            text-align: left;
             position: absolute;
             padding: 10px;
 
@@ -49,7 +59,6 @@ h1 {
                 color: #000;
                 font-weight: 800;
                 line-height: 1.25;
-                text-align: left;
             }
 
             .sub-title {
@@ -72,7 +81,7 @@ h1 {
                 button {
                     font-size: 0.5rem;
                     padding: 0.25rem 1.0rem;
-                    border-radius: 1.2em;
+                    border-radius: 1.5em;
                 }
 
                 .select-button {
@@ -87,44 +96,221 @@ h1 {
             }
         }
         .right {
+            background-color: white;
             position: absolute;
             top: 0px;
             left: 0;
             z-index: -1;
-            opacity: 0.4;
+            
 
             img {
                 width: 100%;
                 height: auto;
+                opacity: 0.4;
             }
+        }
+    }
+  
+    .footer {
+        width: 100%;
+        padding-top: 80%; 
+        position: absolute;
+        .navigation-footer {
+            display: flex;
+            color: #000;
+            flex-wrap: nowrap;
+            justify-content: space-evenly;
+            font-weight: 500;
         }
     }
 }
 
 @media (min-width: 576px) {
     .main-container {
+
         .article-content {
             .left {
+                padding-top: 5%;
                 .main-title {
                     font-size: 3rem;
                 }
+                .sub-title {
+                    font-size: 1rem;
+                }
+                .looking-for {
+                    font-size: 1.2rem;
+                }
+    
+                .looking-buttons {
+                    button {
+                        font-size: 0.8rem;
+                    }
+                }
             }
+        }
+        .footer{
+            padding-top: 60%;
         }
     }
 }
 
 @media (min-width: 768px) {
+    .main-container {
+        .article-content {
+            .left {
+                text-align: center;
+                .main-title {
+                    font-size: 3.2rem;
+                }
+                .sub-title {
+                    padding-left: 10%;
+                    max-width: 80%;
+                    font-size: 1.2rem;
+                }
+                .looking-for {
+                    font-size: 1.4rem;
+                }
     
+                .looking-buttons {
+                    button {
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+        .footer{
+            padding-top: 50%;
+            font-size: 1.2rem;
+        }
+    }
 }
 
 @media (min-width: 992px) {
+    body, html {
+        background-color: $main-color;
+        margin: 3%;
+    }
+    .main-container {
+        .header-content {
+            .logo {
+                img {
+                    width: 70%;
+                }
+            }
+            .navigation{
+                display: initial;
+                display: flex;
+                font-weight: 600;
+            }
+        }
+        .article-content {
+            position: absolute;
+            display: flex;
+            .left {
+                text-align: left;
+                background-color: white;
+                position: relative;
+                .main-title {
+                    font-size: 2.5rem;
+                }
+                .sub-title {
+                    font-size: 1rem;
+                    padding-left: 0;
+                }
+                .looking-for {
+                    font-size: 1rem;
+                }
+
+                .looking-buttons {
+                    button {
+                        font-size: 0.8rem;
+                        font-weight: 500;
+                    }
+                }
+            }
+            .right {
+                background-color: white;
+                position: relative;
+                top: 0px;
+                left: 0;
+                z-index: 0;
+                
     
+                img {
+                    width: 100%;
+                    height: auto;
+                    opacity: 1;
+                }
+            }
+        }
+        .footer{
+            display: none;
+        }
+    }    
 }
 
 @media (min-width: 1200px) {
+    .main-container {
+        .article-content {
+            .left {
+                .main-title {
+                    font-size: 2.5rem;
+                }
+                .sub-title {
+                    font-size: 1.2rem;
+                }
+                .looking-for {
+                    font-size: 1.2rem;
+                }
+
+                .looking-buttons {
+                    button {
+                        font-size: 1rem;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+    }    
     
 }
 
 @media (min-width: 1400px) {
+    .main-container {
+        .article-content {
+            .left {
+                padding: 0;
+                width: 50%;
+                padding-left: 10%;
+                padding-top: 7%;
+                
+                .main-title {
+                    font-size: 3rem;
+                }
+                .sub-title {
+                    padding-top: 5%;
+                    font-size: 1rem;
+                    max-width: 95%;
+                    line-height: 2rem;
+                }
+                .looking-for {
+                    font-size: 1.2rem;
+                    padding-top: 5%;
+                }
+
+                .looking-buttons {
+                    padding-top: 5%;
+                    max-width: 80%;
+                    margin-right: 1%;
+                    button {
+                        line-height: 1.5rem;
+                        font-size: 0.8rem;
+                        font-weight: 500;
+                        margin-right: 5%
+                    }
+                }
+            }
+        }
+    }    
     
 }
