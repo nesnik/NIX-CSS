@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "Don't fall in love",
   "scripts": {
-    "compile": "sass --watch app.scss app.css",
+    "watch": "sass --watch app.scss app.css",
+    "compile": "sass app.scss app.css",
     "serve": "http-server"
   },
   "repository": {
